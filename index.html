@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="王博中 - AI 算法工程师方向个人主页，聚焦 Tool-use Agent、后训练、长程智能体与多模态足球智能。"
+    />
+    <title>王博中 | AI 算法工程师</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="回到首页">王博中</a>
+      <nav class="nav" aria-label="主页导航">
+        <a href="#skills">技能</a>
+        <a href="#experience">实习</a>
+        <a href="#research">科研</a>
+        <a href="#education">教育</a>
+        <a class="nav-contact" href="#contact">联系我</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="status-pill"><span></span>2029 届硕士生 · Agent / 后训练 / 多模态 AI</p>
+          <h1>王博中</h1>
+          <p class="role">AI 算法工程师方向</p>
+          <p class="subtitle">
+            华南理工大学未来技术学院人工智能硕士研究生。关注 Tool-use Agent、长程任务
+            harness、轨迹蒸馏与低成本大模型落地，正在把足球领域智能体和小模型 Agent
+            科研沉淀为可复现的实验闭环。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">查看项目</a>
+            <a class="button secondary" href="mailto:1011361251@qq.com">联系我</a>
+          </div>
+          <dl class="metrics" aria-label="关键亮点">
+            <div>
+              <dt>1/128</dt>
+              <dd>本科专业排名</dd>
+            </div>
+            <div>
+              <dt>69%</dt>
+              <dd>Agent gap closure</dd>
+            </div>
+            <div>
+              <dt>72.5%</dt>
+              <dd>observation 使用率</dd>
+            </div>
+            <div>
+              <dt>2 项</dt>
+              <dd>国家级一等奖</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="profile-stage" aria-label="个人信息卡片">
+          <div class="profile-card">
+            <div class="card-topline">
+              <span>AI ALGORITHM</span>
+              <span>SCUT</span>
+            </div>
+            <img src="./assets/profile.jpeg" alt="王博中头像" />
+            <div class="profile-text">
+              <strong>王博中</strong>
+              <span>Agent Harness · Tool-use · LoRA</span>
+            </div>
+            <div class="card-fields">
+              <span>2026.9 - 2029.6</span>
+              <span>华南理工大学 · 人工智能</span>
+              <span>Southwest University · Software Engineering</span>
+            </div>
+            <div class="barcode" aria-hidden="true"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p>Technical Stack</p>
+          <h2>技术能力</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>后训练与数据</h3>
+            <div class="chips">
+              <span>LoRA / QLoRA</span>
+              <span>SFT 数据构造</span>
+              <span>DPO</span>
+              <span>PPO</span>
+              <span>GRPO</span>
+              <span>OPD-like</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>Agent 与工具调用</h3>
+            <div class="chips">
+              <span>Tool-use Agent</span>
+              <span>trajectory harness</span>
+              <span>runtime checks</span>
+              <span>failure taxonomy</span>
+              <span>TAU2-Bench</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>大模型与工程</h3>
+            <div class="chips">
+              <span>Qwen2.5 / Qwen3.5</span>
+              <span>DeepSeek V4</span>
+              <span>Python</span>
+              <span>schema design</span>
+              <span>数据导出与过滤</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <p>Internship</p>
+          <h2>实习经历</h2>
+        </div>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <span>咪咕视讯科技有限公司</span>
+            <time>2026.03 至今</time>
+          </div>
+          <h3>大模型算法工程师 · 足球领域 Tool-use Agent 轨迹蒸馏</h3>
+          <p>
+            将原始 SoccerAgent 改造为可执行、可回放、可过滤的 trajectory harness，支持
+            task、tool、action、observation、reward schema 与 SFT / DPO / OPD-like 数据导出。
+          </p>
+          <ul class="detail-list">
+            <li>
+              使用 DeepSeek V4 生成候选工具调用轨迹，通过 harness 执行 SoccerWiki /
+              GameDataset 检索工具。
+            </li>
+            <li>
+              基于 evidence coverage、tool validity、answer correctness 等指标过滤高质量轨迹，
+              蒸馏 Qwen2.5-7B-Instruct LoRA planner。
+            </li>
+            <li>
+              设计 A/B 实验矩阵，对比原始 Agent、harness-enhanced Agent、base Qwen 与 SFT
+              planner；小样本预研中 observation 使用率由 17.5% 提升至 72.5%，重复搜索和
+              max-step 问题降为 0。
+            </li>
+          </ul>
+          <div class="tag-row">
+            <span>SoccerAgent</span>
+            <span>Tool-use</span>
+            <span>LoRA Planner</span>
+            <span>Trajectory Filtering</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p>Research</p>
+          <h2>科研项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-kicker">Long-horizon Agent</div>
+            <h3>小模型长程 Agent 的 State-Action Harness</h3>
+            <p>
+              研究小模型 Agent 在长程工具调用任务中的状态漂移、动作生命周期错误、重复修复循环和提前停止问题，
+              通过 small-fail / reference-success 成对轨迹分析定位 first divergence，并将高频 failure labels
+              映射为 runtime checks。
+            </p>
+            <div class="project-stats">
+              <div><strong>86/180</strong><span>2B baseline</span></div>
+              <div><strong>104/180</strong><span>v3final harness</span></div>
+              <div><strong>112/180</strong><span>9B baseline</span></div>
+            </div>
+            <p>
+              在 TAU2 dev20@3 设置下，相对 Qwen3.5-9B baseline 约关闭 69% 的已测量
+              2B-to-9B gap，收益主要集中在长程 action lifecycle 与 terminal-control failure。
+            </p>
+            <div class="tag-row">
+              <span>TAU2-Bench</span>
+              <span>Qwen3.5-2B / 9B</span>
+              <span>State-Action Monitor</span>
+              <span>Failure Diagnosis</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-kicker">Applied Agent</div>
+            <h3>足球领域 Tool-use Agent 轨迹蒸馏</h3>
+            <p>
+              面向低成本足球问答 Agent 落地，构建可执行 trajectory harness 和高质量轨迹过滤流程，
+              让工具调用数据能够被复盘、筛选并用于后续 SFT / 偏好优化。
+            </p>
+            <div class="tag-row">
+              <span>SoccerWiki</span>
+              <span>GameDataset</span>
+              <span>Evidence Coverage</span>
+              <span>SFT Export</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="education">
+        <div>
+          <div class="section-heading compact">
+            <p>Education</p>
+            <h2>教育经历</h2>
+          </div>
+          <div class="education-list">
+            <article>
+              <span>2026.09 - 2029.06</span>
+              <h3>华南理工大学（985）</h3>
+              <p>未来技术学院 · 人工智能 · 保研</p>
+            </article>
+            <article>
+              <span>2022.09 - 2026.06</span>
+              <h3>西南大学（211、双一流）</h3>
+              <p>软件工程 · 专业排名 1 / 128</p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <div class="section-heading compact">
+            <p>Awards</p>
+            <h2>荣誉竞赛</h2>
+          </div>
+          <div class="award-list">
+            <span>CET-4 565 · CET-6 569</span>
+            <span>一等奖学金、二等奖学金、校级三好学生</span>
+            <span>中国机器人与人工智能大赛国家级一等奖</span>
+            <span>大唐杯国家级一等奖</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p>Contact</p>
+          <h2>期待研究型实习与算法工程机会</h2>
+          <span>Tool-use Agent · 后训练 · 多模态足球智能 · 长程任务评测</span>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:1011361251@qq.com">1011361251@qq.com</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
