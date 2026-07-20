@@ -16,7 +16,6 @@
       <nav class="nav" aria-label="主页导航">
         <a href="#education">教育</a>
         <a href="#experience">实习</a>
-        <a href="#research">科研</a>
         <a href="#skills">技能</a>
         <a class="nav-contact" href="#contact">联系我</a>
       </nav>
@@ -34,17 +33,13 @@
             科研沉淀为可复现的实验闭环。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">查看项目</a>
+            <a class="button primary" href="#experience">查看经历</a>
             <a class="button secondary" href="mailto:1011361251@qq.com">联系我</a>
           </div>
           <dl class="metrics" aria-label="关键亮点">
             <div>
               <dt>1/128</dt>
               <dd>本科专业排名</dd>
-            </div>
-            <div>
-              <dt>69%</dt>
-              <dd>Agent gap closure</dd>
             </div>
             <div>
               <dt>72.5%</dt>
@@ -63,7 +58,7 @@
               <span>AI ALGORITHM</span>
               <span>SCUT</span>
             </div>
-            <img src="./assets/profile.jpeg" alt="王博中头像" />
+            <div class="profile-monogram" aria-hidden="true">WB</div>
             <div class="profile-text">
               <strong>王博中</strong>
               <span>Agent Harness · Tool-use · LoRA</span>
@@ -148,54 +143,6 @@
             <span>Trajectory Filtering</span>
           </div>
         </article>
-      </section>
-
-      <section class="section" id="research">
-        <div class="section-heading">
-          <p>Research</p>
-          <h2>科研项目</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-kicker">Long-horizon Agent</div>
-            <h3>小模型长程 Agent 的 State-Action Harness</h3>
-            <p>
-              研究小模型 Agent 在长程工具调用任务中的状态漂移、动作生命周期错误、重复修复循环和提前停止问题，
-              通过 small-fail / reference-success 成对轨迹分析定位 first divergence，并将高频 failure labels
-              映射为 runtime checks。
-            </p>
-            <div class="project-stats">
-              <div><strong>86/180</strong><span>2B baseline</span></div>
-              <div><strong>104/180</strong><span>v3final harness</span></div>
-              <div><strong>112/180</strong><span>9B baseline</span></div>
-            </div>
-            <p>
-              在 TAU2 dev20@3 设置下，相对 Qwen3.5-9B baseline 约关闭 69% 的已测量
-              2B-to-9B gap，收益主要集中在长程 action lifecycle 与 terminal-control failure。
-            </p>
-            <div class="tag-row">
-              <span>TAU2-Bench</span>
-              <span>Qwen3.5-2B / 9B</span>
-              <span>State-Action Monitor</span>
-              <span>Failure Diagnosis</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-kicker">Applied Agent</div>
-            <h3>足球领域 Tool-use Agent 轨迹蒸馏</h3>
-            <p>
-              面向低成本足球问答 Agent 落地，构建可执行 trajectory harness 和高质量轨迹过滤流程，
-              让工具调用数据能够被复盘、筛选并用于后续 SFT / 偏好优化。
-            </p>
-            <div class="tag-row">
-              <span>SoccerWiki</span>
-              <span>GameDataset</span>
-              <span>Evidence Coverage</span>
-              <span>SFT Export</span>
-            </div>
-          </article>
-        </div>
       </section>
 
       <section class="section" id="skills">

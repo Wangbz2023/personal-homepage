@@ -203,7 +203,7 @@ p {
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(96px, 1fr));
+  grid-template-columns: repeat(3, minmax(96px, 1fr));
   gap: 22px;
   max-width: 780px;
   margin: 58px 0 0;
@@ -269,15 +269,17 @@ p {
   letter-spacing: 0.08em;
 }
 
-.profile-card img {
-  display: block;
+.profile-monogram {
+  display: grid;
+  place-items: center;
   width: 156px;
-  height: 196px;
+  height: 156px;
   margin: 38px auto 26px;
-  object-fit: cover;
-  border: 1px solid var(--line);
+  color: #ffffff;
+  background: var(--ink);
   border-radius: 8px;
-  background: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
 }
 
 .profile-text {
