@@ -203,7 +203,7 @@ p {
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(96px, 1fr));
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
   gap: 22px;
   max-width: 780px;
   margin: 58px 0 0;
@@ -421,6 +421,10 @@ p {
 .timeline-card,
 .project-card {
   padding: clamp(26px, 4vw, 40px);
+}
+
+.timeline-card + .timeline-card {
+  margin-top: 18px;
 }
 
 .timeline-meta {

@@ -29,8 +29,8 @@
           <p class="role">AI 算法工程师方向</p>
           <p class="subtitle">
             华南理工大学未来技术学院人工智能硕士研究生。关注 Tool-use Agent、长程任务
-            harness、轨迹蒸馏与低成本大模型落地，正在把足球领域智能体和小模型 Agent
-            科研沉淀为可复现的实验闭环。
+            harness、轨迹蒸馏与低成本大模型落地，正在把足球领域智能体与流式视频理解
+            沉淀为可复现的模型、数据和评测闭环。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#experience">查看经历</a>
@@ -44,6 +44,10 @@
             <div>
               <dt>72.5%</dt>
               <dd>observation 使用率</dd>
+            </div>
+            <div>
+              <dt>68.6 万</dt>
+              <dd>项目视频 clips</dd>
             </div>
             <div>
               <dt>2 项</dt>
@@ -61,7 +65,7 @@
             <div class="profile-monogram" aria-hidden="true">WB</div>
             <div class="profile-text">
               <strong>王博中</strong>
-              <span>Agent Harness · Tool-use · LoRA</span>
+              <span>Tool-use · Streaming VLM · LoRA</span>
             </div>
             <div class="card-fields">
               <span>2026.9 - 2029.6</span>
@@ -111,6 +115,41 @@
           <p>Internship</p>
           <h2>实习经历</h2>
         </div>
+        <article class="timeline-card">
+          <div class="timeline-meta">
+            <span>咪咕视讯科技有限公司</span>
+            <time>2026.03 至今</time>
+          </div>
+          <h3>StreamSoccer · 基于分层事件记忆的流式足球视频理解系统</h3>
+          <p>
+            参与研发 Qwen3-VL 驱动的三级流式视频理解系统，以 query-based Clip Event Adapter、
+            9-token gated STM、MemoryProjector 与 LoRA，将连续视觉流压缩为因果事件状态，
+            支持当前、局部和长时三层足球解说。
+          </p>
+          <ul class="detail-list">
+            <li>
+              参与数据与实验工程：项目将 500 场 SoccerNet 比赛整理为 685,903 个 4 秒 clip
+              和 166,419 个因果事件，并融合 SN-Caption、MatchTime 构建 27,639 条分层解说样本。
+            </li>
+            <li>
+              参与 Qwen 视觉缓存与实验链路审计：项目在 1,000 个半场、685,903 个 clip 上实现
+              100% 缓存覆盖，并完善数据 schema、训练、消融、指标与 checkpoint 管理。
+            </li>
+            <li>
+              参与流式推理与评测治理：系统在 63 场测试比赛、86,145 个 clip 上生成 5,949 条
+              时间感知解说，并通过 match-level split、causal cutoff、evidence provenance 与
+              prompt leakage 审计保障评测可追溯。
+            </li>
+          </ul>
+          <div class="tag-row">
+            <span>Qwen3-VL</span>
+            <span>Streaming VLM</span>
+            <span>Hierarchical Memory</span>
+            <span>LoRA</span>
+            <span>SoccerNet</span>
+          </div>
+        </article>
+
         <article class="timeline-card">
           <div class="timeline-meta">
             <span>咪咕视讯科技有限公司</span>
